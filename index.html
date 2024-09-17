@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="./calc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="calcu">
+        <div class="centeritem">
+            <input type="text" placeholder="0" id="result" name="" class="form-control">
+             <div class="buttons">
+                <button onclick="displayData('7')">7</button>
+                <button onclick="displayData('8')">8</button>
+                <button onclick="displayData('9')">9</button>
+                <button class="colorbuton" ><i class="fa-solid fa-divide"  onclick="displayData('/')"></i></button>
+
+
+                <button onclick="displayData('4')">4</button>
+                <button onclick="displayData('5')">5</button>
+                <button onclick="displayData('6')">6</button>
+                <button class="colorbuton" onclick="displayData('*')">X</button>
+
+
+                <button onclick="displayData('1')">1</button> 
+                <button onclick="displayData('2')">2</button>
+                <button onclick="displayData('3')">3</button> 
+                <button class="colorbuton" onclick="displayData('-')">-</button>
+
+  
+                <button onclick="displayData('0')">0</button>
+                <button onclick="clearcalculatorscreen()">C</button>
+                <button onclick="backspacedata()"><i class="fa-solid fa-delete-left" ></i></button>
+                <button  class="bigbutton" onclick="displayData('+')">+</button>
+                
+                <button onclick="displayData('.')">.</button>
+                <button class="colorbuton" onclick="displayData('%')">%</button>
+                <button class="colorbuton" onclick="evaluvateexpression()">=</button>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./calculator.js"></script>
+
+</html>
